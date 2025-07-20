@@ -19,7 +19,9 @@ public class McpToolAutoConfig implements BeanFactoryPostProcessor {
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         Map<String, Object> beansWithAnnotation = beanFactory.getBeansWithAnnotation(McpTool.class);
-        MethodToolCallbackProvider build = MethodToolCallbackProvider.builder().toolObjects(beansWithAnnotation.values()).build();
+
+        // 自动配置McpTool
+        MethodToolCallbackProvider build = MethodToolCallbackProvider.builder().toolObjects(beansWithAnnotation.values().toArray()).build();
         beanFactory.registerSingleton(build.getClass().getName(), build);
     }
 }
