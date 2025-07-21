@@ -1,4 +1,4 @@
-package com.ljy.mcpstdioserver.learn;
+package com.ljy.mcpstdioserver.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.modelcontextprotocol.server.McpServerFeatures;

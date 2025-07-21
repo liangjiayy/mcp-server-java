@@ -1,9 +1,8 @@
-package com.ljy.mcpstdioserver.learn;
+package com.ljy.mcpstdioserver.example;
 
 import com.ljy.mcpstdioserver.config.anno.McpTool;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
-import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 

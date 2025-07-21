@@ -1,4 +1,4 @@
-package com.ljy.mcpstdioserver.learn;
+package com.ljy.mcpstdioserver.example;
 
 import io.modelcontextprotocol.server.McpServerFeatures;
 import io.modelcontextprotocol.spec.McpSchema;
