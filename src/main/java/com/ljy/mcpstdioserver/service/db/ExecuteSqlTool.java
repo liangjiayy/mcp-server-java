@@ -34,18 +34,11 @@ public class ExecuteSqlTool {
                 case "mysql":
                     driverClassName = com.mysql.cj.jdbc.Driver.class.getName();
                     break;
-                // case "postgresql":
-                //     driverClassName = "org.postgresql.Driver";
-                //     break;
-                // case "oracle":
-                //     driverClassName = "oracle.jdbc.driver.OracleDriver";
-                //     break;
-                // case "sqlserver":
-                //     driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-                //     break;
+                case "postgresql":
+                    driverClassName = org.postgresql.Driver.class.getName();
+                    break;
                 default:
-                    // throw new IllegalArgumentException("Unsupported database type: " + config.getType());
-                    return;
+                    throw new IllegalArgumentException("Unsupported database type: " + config.getType());
             }
 
             DataSource datasource = DataSourceBuilder.create()

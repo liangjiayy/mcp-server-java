@@ -11,7 +11,7 @@ mcp:
       - id: postgres1
         description: PostgreSQL只读数据库
         type: postgresql
-        url: jdbc:postgresql://localhost:5432/mydb
-        username: user
-        password: password
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password: root
         sqlExecutionType: READ_ONLY
